@@ -1,0 +1,90 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>TechNova Innovation</title>
+    <link rel="stylesheet" href="./index.css" />
+  </head>
+  <body>
+    <header>
+      <div class="nav-bar">
+        <h1>TechNova Innovation</h1>
+        <a href="index.html">HOME</a>
+        <a href="ourservices.html">OUR SERVICES</a>
+        <a href="aboutus.html">ABOUT US</a>
+        <a href="contactus.html">CONTACT US</a>
+      </div>
+    </header>
+    <main>
+      <div class="tagline"><h3>"Innovating the Future, Today"</h3></div>
+      <div class="brief">
+        <div class="brief-para">
+          <p>
+            Technova Innovation is a leading technology company that specializes
+            in delivering cutting-edge solutions to businesses worldwide. With a
+            strong focus on Web Development, Cloud Solutions, and AI/ML
+            Services, we help organizations unlock their full potential by
+            transforming their digital strategies. Our expert team is dedicated
+            to building custom, scalable, and secure web applications, providing
+            robust cloud infrastructures, and harnessing the power of Artificial
+            Intelligence and Machine Learning to drive innovation and
+            efficiency. At Technova Innovation, we are committed to shaping the
+            future of technology and empowering businesses to stay ahead in a
+            rapidly evolving digital landscape.
+          </p>
+        </div>
+       <a href="AboutUs.html"> <button class="more-button">Learn More</button></a>
+        
+      </div>
+      <div class="testimonial-head-div">
+        <h5>Our Testimonial's</h5>
+        <div class="slider-container">
+            <div class="testimonial active">
+              <p>"This service is amazing! Highly recommend it."</p>
+              <h4>- John Doe</h4>
+            </div>
+            <div class="testimonial">
+              <p>"Great experience and fantastic support."</p>
+              <h4>- Jane Smith</h4>
+            </div>
+            <div class="testimonial">
+              <p>"I am extremely satisfied with the results."</p>
+              <h4>- Alex Johnson</h4>
+            </div>
+            <div class="buttons">
+              <button onclick="prevTestimonial()">Previous</button>
+              <button onclick="nextTestimonial()">Next</button>
+            </div>
+          </div>
+          <script>
+            let currentTestimonial = 0;
+            const testimonials = document.querySelectorAll(".testimonial");
+        
+            function showTestimonial(index) {
+              testimonials.forEach((testimonial, i) => {
+                testimonial.classList.toggle("active", i === index);
+              });
+            }
+        
+            function nextTestimonial() {
+              currentTestimonial = (currentTestimonial + 1) % testimonials.length;
+              showTestimonial(currentTestimonial);
+            }
+        
+            function prevTestimonial() {
+              currentTestimonial =
+                (currentTestimonial - 1 + testimonials.length) % testimonials.length;
+              showTestimonial(currentTestimonial);
+            }
+          </script>
+        </div>
+    </main>
+    <footer>
+      <div class="footer">
+        <p>Address : Rajpur, Bazaar Road, Rohtas<br />Bihar,802219</p>
+        <div>&copy Made with &#10084 Love by TechNova Innovations</div>
+      </div>
+    </footer>
+  </body>
+</html>

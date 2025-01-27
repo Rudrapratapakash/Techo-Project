@@ -1,0 +1,80 @@
+.about-us {
+  text-align: center;
+  color: #001233;
+}
+.members {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  gap: 80px;
+  height: 700px;
+}
+.members-tag {
+  width: 500px;
+  height: 300px;
+  text-align: center;
+  background-color: #001233;
+  color: #979dac;
+  border-radius: 10px;
+}
+.members-tag:hover {
+  background-color: #979dac;
+  color: #001233;
+  transition: 0.5s;
+}
+.photo1 {
+  padding-top: 40px;
+  height: 100px;
+  width: 100px;
+}
+.intro {
+  display: flex;
+  justify-content: center;
+  gap: 20px;
+  height: 200px;
+  width: 100%;
+  margin-left: 0;
+}
+.mission {
+  width: 45%;
+  font-size: 20px;
+  background-color: #001233;
+  color: #979dac;
+  padding-left: 20px;
+  border-radius: 10px;
+  box-shadow: 0 4px 6px rgb(0, 0, 0, 0.3);
+}
+.mission h3 {
+  font-size: 25px;
+  text-align: center;
+}
+.mission:hover {
+  color: #001233;
+  background-color: #979dac;
+  transition: 0.5s;
+}
+.vision {
+  width: 45%;
+  font-size: 20px;
+  background-color: #001233;
+  color: #979dac;
+  padding-left: 20px;
+  border-radius: 10px;
+  padding-right: 20px;
+  box-shadow: 0 4px 6px rgb(0, 0, 0, 0.3);
+}
+.vision h3 {
+  font-size: 25px;
+  text-align: center;
+}
+.vision:hover {
+  background-color: #979dac;
+  color: #001233;
+  transition: 0.5s;
+}
+.members-head h3 {
+  text-align: center;
+  color: #001233;
+  font-size: 1.5rem;
+  margin-top: 70px;
+}

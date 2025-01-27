@@ -1,0 +1,31 @@
+.service h1 {
+  text-align: center;
+  font-size: 35px;
+  color: #001233;
+}
+.service-list {
+  margin-top: 50px;
+
+  display: flex;
+  flex-direction: row;
+
+  height: 200px;
+}
+.service-list-div {
+  background-color: #001233;
+  color: #979dac;
+  width: 350px;
+  height: 300px;
+  margin-left: 50px;
+  text-align: center;
+}
+.service-list-div:hover {
+  background-color: #979dac;
+  color: #001233;
+  width: 360px;
+  transition: 0.5s;
+}
+.service-list-div ul {
+  text-align: left;
+  padding: 20px;
+}
